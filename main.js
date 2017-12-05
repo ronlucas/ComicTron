@@ -20,3 +20,16 @@ function createWindow() {
 }
 // al levantar la aplicacion, le mando por parametro la pantalla
 app.on('ready',createWindow);
+
+
+exports.openWindow = () =>{
+    let win = new BrowserWindow({
+        height:200,
+        width:400
+    });
+    win.loadURL(url.format({
+        pathname: path.join(__dirname, '/app/secondary.html'),
+        protocol: 'file:',
+        slashes: true
+      }))
+}

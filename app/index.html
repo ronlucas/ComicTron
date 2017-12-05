@@ -3,14 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <title>ComicTron!</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
   <body>
     <h1>Seleccione Comic a cargar!</h1>
+    <div class="panel panel-default">
+        <div class="panel-body">
+        Cuerpo de panel
+      </div>
+    </div>
     <!--
     We are using node <script>document.write(process.versions.node)</script>,
     Chrome <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
     -->
-    <input id="comicFile" type="file" />
+    <script>require('./js/index.js')</script>
   </body>
 </html>
