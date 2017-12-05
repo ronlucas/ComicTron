@@ -33,3 +33,13 @@ exports.openWindow = () =>{
         slashes: true
       }))
 }
+
+exports.openViewer = () =>{
+    let child = new BrowserWindow({parent: win})
+    child.loadURL(url.format({
+        pathname: path.join(__dirname, '/app/viewer.html'),
+        protocol: 'file:',
+        slashes: true
+      }))
+    child.show();
+}

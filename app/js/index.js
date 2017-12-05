@@ -4,6 +4,6 @@ const main = remote.require('./main.js')
 let button = document.createElement('button')
 button.textContent = 'Open file'
 button.addEventListener('click',()=>{
-main.openWindow()
+main.openViewer()
 },false)
 document.body.appendChild(button)
